@@ -7,19 +7,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist\output.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
-    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" 
-    crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/de01e3e79c.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="flex h-full"> <!--Dashboard starts-->
-        <div class="bg-gray-700 sticky top-0 left-0 h-screen flex flex-col border-r-2 border-gray-400 "> <!--sidebar starts-->
+<body class="bg-gray-700">
+    <div class=" flex flex-col  sm:flex-row h-screen"> <!--Dashboard starts-->
+        
+        <div class=" dashboard  bg-gray-700 top-0 left-0  flex flex-col border-r-2 border-gray-400 fixed h-screen hidden sm:block sm:relative "> <!--sidebar starts-->
             <div class="flex gap-4 px-8 py-6 items-center justify-start "> <!--title-dash-->
                 <i 
                     style="font-size: 35px;"
                     class="fa fa-th-large text-gray-400 ">
                 </i>
                 <h2 class=" text-3xl  text-gray-400">Dashboard</h2>
+                <button class="hamburger block sm:hidden "><i class="fas fa-times"></i></button>
             </div> <!--title-dash ends-->
             <div > <!--nav-items starts-->
                 <div class="flex gap-4 px-8 py-1 items-center justify-start hover:bg-gray-700 hover:text-purple-600 border-box hover:border-purple-600 hover:border-l-4  ">
@@ -107,7 +107,7 @@
             </div> <!--nav-items ends-->
 
         </div> <!--sidebar ends-->
-        <section class="bg-gray-700 flex flex-col flex-1"> <!--main section starts-->
+        <section class="bg-gray-700 flex flex-col "> <!--main section starts-->
             <!-- <header class=" flex flex-col top-0 h-auto p-4 bg-orange-300"> 
                 <section class="flex gap-4 justify-between px-4"> 
                     <div class="flex w-3/4 gap-4 items-center"> 
@@ -156,10 +156,11 @@
                 </section>
 
             </header>  -->
-            <header class=" bg-gray-700 sticky top-0 h-auto p-4 border-b-2 border-gray-400 "> <!-- Header Section -->
+            <header class=" bg-gray-700  top-0 h-auto p-4 border-b-2 border-gray-400 "> <!-- Header Section -->
                 <section class="flex gap-4 justify-between px-6">
                     <div class="flex w-3/4 gap-4 items-center">
-                        <div class="flex items-center justify-center h-8 w-8">
+                        <div class="flex items-center justify-around h-8 w-12">
+                            <button class="hamburger mr-4 block sm:hidden "><i class="fa fa-bars"></i></button>
                             <i style="font-size: 15px" class="fa fa-search text-gray-400"></i>
                         </div>
                         <input class="w-3/4 rounded-full bg-gray-400 " type="text">
@@ -169,7 +170,7 @@
                         <div class="flex items-center justify-center h-8 w-8">
                             <i style="font-size: 15px" class="fa fa-bell text-gray-400"></i>
                         </div>
-                        <img class="h-14 w-14 rounded-full" src="../dist/images/user.png" alt="">
+                        <img class="h-14 w-14 rounded-full hidden sm:block" src="../dist/images/user.png" alt="">
                         <h4 class="text-md text-gray-400 overflow-x-wrap">Sethu Ravichandhran</h4>
                     </div>
                 </section>
@@ -201,7 +202,7 @@
                     <h1 class="mb-3 mt-3 ml-3 text-xl font-semibold text-gray-400">Projects</h1>
                     <div class="flex flex-row flex-wrap justify-evenly ml-3 mr-3 gap-4">
                         <div class=" flex flex-col rounded-xl flex-[1_1_max(300px,(100%/3))] bg-gray-700 border-l-8 border-purple-600 ">
-                            <h2 class="pt-6 pl-4 text-gray-400">Super cool project</h2>
+                            <h2 class="pt-6 pl-4 text-gray-400 font-bold">Super cool project</h2>
                             <p class="pl-4 pb-6 text-gray-400">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Corporis unde accusantium aliquid eos earum, 
@@ -219,7 +220,7 @@
                             </div>
                         </div>
                         <div class=" flex flex-col rounded-xl flex-[1_1_max(300px,(100%/3))] bg-gray-700 border-l-8 border-purple-600">
-                            <h2 class="pt-6 pl-4 text-gray-400">Super cool project</h2>
+                            <h2 class="pt-6 pl-4 text-gray-400 font-bold">Super cool project</h2>
                             <p class="pl-4 pb-6 text-gray-400 ">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Corporis unde accusantium aliquid eos earum, 
@@ -238,7 +239,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col rounded-xl flex-[1_1_max(300px,(100%/3))] bg-gray-700 border-l-8 border-purple-600">
-                            <h2 class="pt-6 pl-4 text-gray-400">Super cool project</h2>
+                            <h2 class="pt-6 pl-4 text-gray-400 font-bold">Super cool project</h2>
                             <p class="pl-4 pb-6 text-gray-400 ">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Corporis unde accusantium aliquid eos earum, 
@@ -257,7 +258,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col rounded-xl flex-[1_1_max(300px,(100%/3))] bg-gray-700 border-l-8 border-purple-600">
-                            <h2 class="pt-6 pl-4 text-gray-400">Super cool project</h2>
+                            <h2 class="pt-6 pl-4 text-gray-400 font-bold">Super cool project</h2>
                             <p class="pl-4 pb-6  text-gray-400">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Corporis unde accusantium aliquid eos earum, 
@@ -276,7 +277,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col rounded-xl flex-[1_1_max(300px,(100%/3))] bg-gray-700 border-l-8 border-purple-600">
-                            <h2 class="pt-6 pl-4 text-gray-400">Super cool project</h2>
+                            <h2 class="pt-6 pl-4 text-gray-400 font-bold">Super cool project</h2>
                             <p class="pl-4 pb-6 text-gray-400 ">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Corporis unde accusantium aliquid eos earum, 
@@ -295,7 +296,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col rounded-xl flex-[1_1_max(300px,(100%/3))] bg-gray-700 border-l-8 border-purple-600">
-                            <h2 class="pt-6 pl-4 text-gray-400">Super cool project</h2>
+                            <h2 class="pt-6 pl-4 text-gray-400 font-bold">Super cool project</h2>
                             <p class="pl-4 pb-6 text-gray-400 ">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Corporis unde accusantium aliquid eos earum, 
@@ -322,15 +323,15 @@
                         <h3 class="mb-3 mt-3 ml-3 text-xl font-semibold text-gray-400">Announcements</h3>
                         <div class=" gap-4 border-2 border-slate-500 rounded-xl bg-gray-700">
                             <div class="ml-4 mt-2">
-                                <h4 class="text-gray-400">Site Maintenance</h4>
-                                <p class="text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <h4 class="text-gray-400 font-semibold">Site Maintenance</h4>
+                                <p class="text-gray-400 text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     Corporis unde accusantium aliquid eos earum 
                                     
                                 </p>
                             </div>
                             <hr>
                             <div class="ml-4">
-                                <h4 class="text-gray-400">Site Maintenance</h4>
+                                <h4 class="text-gray-400 font-semibold">Site Maintenance</h4>
                                 <p class="text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     Corporis unde accusantium aliquid eos earum 
                                     
@@ -338,7 +339,7 @@
                             </div>
                             <hr>
                             <div class="ml-4 mb-2">
-                                <h4 class="text-gray-400">Site Maintenance</h4>
+                                <h4 class="text-gray-400 font-semibold">Site Maintenance</h4>
                                 <p class="text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     Corporis unde accusantium aliquid eos earum 
                                     
@@ -380,5 +381,6 @@
         </section> <!--main section ends-->
 
     </div> <!--Dashboard ends-->
+    <script src="../script.js"></script>
 </body>
 </html>
